@@ -1,20 +1,23 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography, Button } from "@mui/material";
 
 const Hero = () => {
   return (
-    <Box width="100%" mt={20} mx="auto">
+    <Box width="100%" mt={20}>
       <Grid
         container
         spacing={6}
         direction="row"
         alignItems="center"
-        sx={{ overflow: "hidden" }}
+        justifyContent="space-between"
+        justifyItems="space-between"
       >
         <Box
           width="50%"
           sx={{
             display: "flex",
-            justifyContent: "flex-end",
+            justifyContent: "flex-start",
+            justifyItems: "space-between",
+            flexDirection: "column",
           }}
         >
           <Typography fontSize="2rem" maxWidth="800px" fontWeight={300}>
@@ -22,17 +25,31 @@ const Hero = () => {
             Vestibulum feugiat <b>purus</b>, sit amet dapibus odio maximus{" "}
             <b>suscipit.</b>
           </Typography>
+          <br />
+          <Button
+            variant="outlined"
+            disableElevation
+            color="primary"
+            sx={{
+              width: "8rem",
+              alignSelf: "center",
+            }}
+          >
+            Get Started
+          </Button>
         </Box>
 
         <Box
-          width="50%"
+          width="40%"
           sx={{
-            maxWidth: "800px",
+            position: "relative",
+            maxWidth: "100%",
             display: "flex",
-            justifyContent: "flex-end",
+            justifyContent: "flex-start",
+            justifyItems: "space-between",
           }}
         >
-          <img src="/hero.svg" alt="hero" width="70%" />
+          <img src="/hero.svg" alt="hero" width="120%" />
         </Box>
       </Grid>
     </Box>
