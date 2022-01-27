@@ -1,37 +1,35 @@
-import { AppBar, Stack } from '@mui/material';
-import React from 'react';
+import { AppBar, Stack } from "@mui/material";
+import React from "react";
 
-import { useAppSelector } from '../../redux/hooks';
-import { StyledButton, StyledLink, StyledToolbar } from './header.styled';
+import { useAppSelector } from "../../redux/hooks";
+import { StyledButton, StyledLink, StyledToolbar } from "./header.styled";
 
 const Header = () => {
   const logoPath = useAppSelector((state) => state.theme.logo);
 
   return (
-    <div>
-      <AppBar position="sticky">
-        <StyledToolbar className="toolbar">
-          <img src={logoPath} alt="logo" />
-          <h4>Search Box </h4>
+    <AppBar position="fixed" width="100%">
+      <StyledToolbar className="toolbar">
+        <img src={logoPath} alt="logo" />
+        <h4>Search Box </h4>
 
-          <div>
-            <Stack direction="row" spacing={2}>
-              <StyledLink to="/">
-                <h4>Home</h4>
-              </StyledLink>
-              <StyledLink to={'/article'}>
-                <h4>Post</h4>
-              </StyledLink>
-              <StyledLink to={'/'}>
-                <h4>My Page</h4>
-              </StyledLink>
-            </Stack>
-          </div>
+        <div>
+          <Stack direction="row" spacing={2}>
+            <StyledLink to="/">
+              <h4>Home</h4>
+            </StyledLink>
+            <StyledLink to={"/article"}>
+              <h4>Post</h4>
+            </StyledLink>
+            <StyledLink to={"/"}>
+              <h4>My Page</h4>
+            </StyledLink>
+          </Stack>
+        </div>
 
-          <StyledButton variant="outline">Login</StyledButton>
-        </StyledToolbar>
-      </AppBar>
-    </div>
+        <StyledButton variant="outline">Login</StyledButton>
+      </StyledToolbar>
+    </AppBar>
   );
 };
 
