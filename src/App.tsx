@@ -1,3 +1,7 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Landing from './pages/Landing';
+import Article from './pages/Article';
+import Header from "./components/Header";
 import { Container } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import React from 'react';
@@ -10,19 +14,16 @@ function App() {
 
   return (
     <ThemeProvider theme={theme.darkTheme ? darkTheme : lightTheme}>
-      <div className="App">
-        <Container>
-          {/* 
-          
-          <Hero />
-          <Trending />
-          <Features> 
-            <p> This is a feature </p> <img src="displaying the feature" />
-          </Features>
-          
-          */}
-        </Container>
+      <BrowserRouter>
+      <div className="App"> 
+        <Header/>
+        <Routes>
+          <Route path="/" element={<Landing/>} />
+            <Route path="/article" element={<Article />} />
+            {/* <Route path="/login" element={<Login />} /> */}
+        </Routes>
       </div>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }
