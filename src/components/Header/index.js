@@ -1,12 +1,17 @@
-import React from "react";
-import { AppBar, Toolbar, Stack, Button } from "@mui/material";
-import { StyledLink, StyledToolbar, StyledButton } from "./header.styled";
+import { AppBar, Stack } from '@mui/material';
+import React from 'react';
+
+import { useAppSelector } from '../../redux/hooks';
+import { StyledButton, StyledLink, StyledToolbar } from './header.styled';
+
 const Header = () => {
+  const logoPath = useAppSelector((state) => state.theme.logo);
+
   return (
     <div>
       <AppBar position="sticky">
         <StyledToolbar className="toolbar">
-          <h4>Logo</h4>
+          <img src={logoPath} alt="logo" />
           <h4>Search Box </h4>
 
           <div>
@@ -14,15 +19,15 @@ const Header = () => {
               <StyledLink to="/">
                 <h4>Home</h4>
               </StyledLink>
-              <StyledLink to={"/article"}>
+              <StyledLink to={'/article'}>
                 <h4>Post</h4>
               </StyledLink>
-              <StyledLink to={"/"}>
+              <StyledLink to={'/'}>
                 <h4>My Page</h4>
               </StyledLink>
             </Stack>
           </div>
-          
+
           <StyledButton variant="outline">Login</StyledButton>
         </StyledToolbar>
       </AppBar>
