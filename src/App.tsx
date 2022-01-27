@@ -1,7 +1,10 @@
-import { Container } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
+import Header from './components/Header';
+import Article from './pages/Article';
+import Landing from './pages/Landing';
 import { useAppSelector } from './redux/hooks';
 import { darkTheme, lightTheme } from './styles/theme';
 
@@ -10,19 +13,16 @@ function App() {
 
   return (
     <ThemeProvider theme={theme.darkTheme ? darkTheme : lightTheme}>
-      <div className="App">
-        <Container>
-          {/* 
-          
-          <Hero />
-          <Trending />
-          <Features> 
-            <p> This is a feature </p> <img src="displaying the feature" />
-          </Features>
-          
-          */}
-        </Container>
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <Header />
+          <Routes>
+            <Route path="/" element={<Landing />} />
+            <Route path="/article" element={<Article />} />
+            {/* <Route path="/login" element={<Login />} /> */}
+          </Routes>
+        </div>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }
