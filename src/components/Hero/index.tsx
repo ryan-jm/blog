@@ -1,7 +1,7 @@
-import { Box, Grid, Typography } from '@mui/material';
-import * as React from 'react';
+import { Box, Grid, Typography } from "@mui/material";
+import * as React from "react";
 
-import { useAppSelector } from '../../redux/hooks';
+import { useAppSelector } from "../../redux/hooks";
 
 const Hero = () => {
   const logoPath = useAppSelector((state) => state.theme.logo);
@@ -10,22 +10,34 @@ const Hero = () => {
     <Box>
       <Grid
         container
-        spacing={8}
-        width="100%"
+        spacing={6}
+        width="100vw"
         direction="row"
         justifyContent="space-between"
         alignItems="center"
-        p={32}
+        p={14}
+        sx={{ overflow: "hidden" }}
       >
-        <Typography variant="h4" component="h4">
-          Lorem ipsum dolor sit amet, <b>consectetur</b>
-          <br />
-          adipiscing elit. Vestibulum feugiat purus <b>urna</b>,
-          <br />
-          sit amet dapibus odio maximus <b>suscipit</b>.
-        </Typography>
+        <Box
+          width="50%"
+          sx={{
+            display: "flex",
+            justifyContent: "flex-end",
+          }}
+        >
+          <Typography fontSize="2rem" maxWidth="800px" fontWeight={300}>
+            Lorem ipsum dolor sit amet, <b>consectetur</b> adipiscing elit.
+            Vestibulum feugiat <b>purus</b>, sit amet dapibus odio maximus{" "}
+            <b>suscipit.</b>
+          </Typography>
+        </Box>
 
-        <img src={logoPath} alt="logo" width="30%" />
+        <Box
+          width="50%"
+          sx={{ maxWidth: "800px", display: "flex", justifyContent: "center" }}
+        >
+          <img src="/hero.svg" alt="hero" width="70%" />
+        </Box>
       </Grid>
     </Box>
   );
