@@ -1,19 +1,13 @@
-import { Container } from '@mui/material';
 import React from 'react';
 
+import Hero from '../components/Hero';
+
 const Landing = () => {
-  return <Container>
-      <h3>Landing 😺</h3>
-    {/* 
-      
+  return (
+    <>
       <Hero />
-      <Trending />
-      <Features> 
-        <p> This is a feature </p> <img src="displaying the feature" />
-      </Features>
-      
-      */}
-  </Container>
+    </>
+  );
 };
 
 export default Landing;
