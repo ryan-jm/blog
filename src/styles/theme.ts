@@ -1,3 +1,8 @@
+import '@fontsource/manrope/300.css';
+import '@fontsource/manrope/400.css';
+import '@fontsource/manrope/500.css';
+import '@fontsource/manrope/700.css';
+
 import { createTheme } from '@mui/material';
 
 export const lightTheme = createTheme({
@@ -10,6 +15,9 @@ export const lightTheme = createTheme({
       primary: '#111111',
     },
   },
+  typography: {
+    fontFamily: ['Manrope', 'Roboto', 'sans-serif'].join(','),
+  },
 });
 
 export const darkTheme = createTheme({
@@ -21,5 +29,8 @@ export const darkTheme = createTheme({
     text: {
       primary: '#fff',
     },
+  },
+  typography: {
+    fontFamily: ['Manrope', 'Roboto', 'sans-serif'].join(','),
   },
 });
