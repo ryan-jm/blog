@@ -9,7 +9,7 @@ interface ThemeState {
 
 const initialState = {
   darkTheme: false,
-  logo: '/public/logo-lightmode.svg',
+  logo: '/logo-lightmode.svg',
 } as ThemeState;
 
 export const themeSlice = createSlice({
@@ -19,9 +19,9 @@ export const themeSlice = createSlice({
     toggleTheme: (state) => {
       state.darkTheme = !state.darkTheme;
       if (!state.darkTheme) {
-        state.logo = '/public/logo-lightmode.svg';
+        state.logo = '/logo-lightmode.svg';
       } else {
-        state.logo = '/public/logo-darkmode.svg';
+        state.logo = '/logo-darkmode.svg';
       }
     },
   },
