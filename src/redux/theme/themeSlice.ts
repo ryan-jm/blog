@@ -4,9 +4,13 @@ import type { RootState } from '../store';
 
 interface ThemeState {
   darkTheme: boolean;
+  logo: string;
 }
 
-const initialState = { darkTheme: false } as ThemeState;
+const initialState = {
+  darkTheme: false,
+  logo: '/logo-lightmode.svg',
+} as ThemeState;
 
 export const themeSlice = createSlice({
   name: 'theme',
@@ -14,6 +18,11 @@ export const themeSlice = createSlice({
   reducers: {
     toggleTheme: (state) => {
       state.darkTheme = !state.darkTheme;
+      if (!state.darkTheme) {
+        state.logo = '/logo-lightmode.svg';
+      } else {
+        state.logo = '/logo-darkmode.svg';
+      }
     },
   },
 });
