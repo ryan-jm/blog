@@ -1,11 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Landing from './pages/Landing';
 import Article from './pages/Article';
+import Header from "./components/Header";
 function App() {
   return (
     <BrowserRouter>
     <div className="App"> 
-      {/* Header */}
+      <Header/>
       <Routes>
         <Route path="/" element={<Landing/>} />
           <Route path="/article" element={<Article />} />
