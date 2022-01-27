@@ -37,6 +37,7 @@ const Features = () => {
       direction="row"
       justifyContent="space-between"
       spacing={12}
+      py={5}
       width="100%"
     >
       <Grid item md={6}>
