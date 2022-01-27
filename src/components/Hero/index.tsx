@@ -1,21 +1,13 @@
 import { Box, Grid, Typography } from "@mui/material";
-import * as React from "react";
-
-import { useAppSelector } from "../../redux/hooks";
 
 const Hero = () => {
-  const logoPath = useAppSelector((state) => state.theme.logo);
-
   return (
-    <Box>
+    <Box width="100%" mt={20} mx="auto">
       <Grid
         container
         spacing={6}
-        width="100vw"
         direction="row"
-        justifyContent="space-between"
         alignItems="center"
-        p={14}
         sx={{ overflow: "hidden" }}
       >
         <Box
@@ -34,7 +26,11 @@ const Hero = () => {
 
         <Box
           width="50%"
-          sx={{ maxWidth: "800px", display: "flex", justifyContent: "center" }}
+          sx={{
+            maxWidth: "800px",
+            display: "flex",
+            justifyContent: "flex-end",
+          }}
         >
           <img src="/hero.svg" alt="hero" width="70%" />
         </Box>
