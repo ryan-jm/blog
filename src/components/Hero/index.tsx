@@ -1,31 +1,56 @@
-import { Box, Grid, Typography } from '@mui/material';
-import * as React from 'react';
-
-import { useAppSelector } from '../../redux/hooks';
+import { Box, Grid, Typography, Button } from "@mui/material";
 
 const Hero = () => {
-  const logoPath = useAppSelector((state) => state.theme.logo);
-
   return (
-    <Box>
+    <Box width="100%" mt={20}>
       <Grid
         container
-        spacing={8}
-        width="100%"
+        spacing={6}
         direction="row"
-        justifyContent="space-between"
         alignItems="center"
-        p={32}
+        justifyContent="space-between"
+        justifyItems="space-between"
       >
-        <Typography variant="h4" component="h4">
-          Lorem ipsum dolor sit amet, <b>consectetur</b>
+        <Box
+          width="50%"
+          sx={{
+            display: "flex",
+            justifyContent: "flex-start",
+            justifyItems: "space-between",
+            flexDirection: "column",
+          }}
+        >
+          <Typography fontSize="2rem" maxWidth="800px" fontWeight={300}>
+            Lorem ipsum dolor sit amet, <b>consectetur</b> adipiscing elit.
+            Vestibulum feugiat <b>purus</b>, sit amet dapibus odio maximus{" "}
+            <b>suscipit.</b>
+          </Typography>
           <br />
-          adipiscing elit. Vestibulum feugiat purus <b>urna</b>,
-          <br />
-          sit amet dapibus odio maximus <b>suscipit</b>.
-        </Typography>
+          <Button
+            variant="outlined"
+            disableElevation
+            color="primary"
+            sx={{
+              width: "8rem",
+              alignSelf: "center",
+            }}
+          >
+            Get Started
+          </Button>
+        </Box>
 
-        <img src={logoPath} alt="logo" width="30%" />
+        <Box
+          width="40%"
+          sx={{
+            position: "relative",
+            maxWidth: "100%",
+            display: "flex",
+            justifyContent: "flex-start",
+            justifyItems: "space-between",
+          }}
+        >
+          <img src="/hero.svg" alt="hero" width="120%" />
+        </Box>
       </Grid>
     </Box>
   );
