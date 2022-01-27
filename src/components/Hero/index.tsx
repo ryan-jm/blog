@@ -5,7 +5,6 @@ import { useAppSelector } from '../../redux/hooks';
 
 const Hero = () => {
   const logoPath = useAppSelector((state) => state.theme.logo);
-  console.log(logoPath);
 
   return (
     <Box>
