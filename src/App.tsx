@@ -1,21 +1,18 @@
-import { Container } from '@mui/material';
-import React from 'react';
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Landing from './pages/Landing';
+import Article from './pages/Article';
 function App() {
   return (
-    <div className="App">
-      <Container>
-        {/* 
-          
-          <Hero />
-          <Trending />
-          <Features> 
-            <p> This is a feature </p> <img src="displaying the feature" />
-          </Features>
-          
-          */}
-      </Container>
+    <BrowserRouter>
+    <div className="App"> 
+      {/* Header */}
+      <Routes>
+        <Route path="/" element={<Landing/>} />
+          <Route path="/article" element={<Article />} />
+          {/* <Route path="/login" element={<Login />} /> */}
+      </Routes>
     </div>
+    </BrowserRouter>
   );
 }
 
