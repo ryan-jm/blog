@@ -1,13 +1,14 @@
-import React from "react";
-import MOCK_DATA from "./mock";
-import { CardMedia, CardContent, Typography, Grid } from "@mui/material";
-import { StyledCard, StyledTypography, StyledBox } from "./trending.style";
+import { CardContent, CardMedia, Container, Typography } from '@mui/material';
+import React from 'react';
+
+import MOCK_DATA from './mock';
+import { StyledBox, StyledCard, StyledTypography } from './trending.style';
 
 const Trending = () => {
   return (
-    <Grid container width="100%">
+    <Container m={0} width="100%">
       <Typography variant="h6">
-        <b>Trending...</b>{" "}
+        <b>Trending...</b>{' '}
       </Typography>
       <StyledBox>
         {MOCK_DATA.map((item) => {
@@ -30,7 +31,7 @@ const Trending = () => {
           );
         })}
       </StyledBox>
-    </Grid>
+    </Container>
   );
 };
 
