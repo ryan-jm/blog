@@ -49,7 +49,7 @@ const Hero = () => {
             justifyItems: "space-between",
           }}
         >
-          <img src="public/hero.svg" alt="hero" width="120%" />
+          <img src="blog/hero.svg" alt="hero" width="120%" />
         </Box>
       </Grid>
     </Box>
