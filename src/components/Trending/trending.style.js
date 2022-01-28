@@ -4,10 +4,22 @@ import { Card, Box, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 export const StyledCard = styled(Card)`
-  max-width: 345;
+  width: 340;
   margin: 0.5rem;
   h4 {
     margin: 0;
+  }
+  :hover{
+   transform:scale(1.02);
+  }
+  img{
+    margin:5px;
+    width:320px;
+    height:160px;
+    object-fit:cover;
+  }
+  div{
+    width:300px;
   }
 `;
 
