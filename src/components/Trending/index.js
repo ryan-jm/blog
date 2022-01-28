@@ -10,7 +10,7 @@ const Trending = () => {
   return (
     <Grid container width="100%">
       <Typography variant="h6">
-        <b>Trending</b>{" "}
+        Trending
       </Typography>
       <StyledBox>
         {MOCK_DATA.map((item) => {
