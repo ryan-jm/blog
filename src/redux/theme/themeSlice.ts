@@ -1,6 +1,6 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
-import type { RootState } from '../store';
+import type { RootState } from "../store";
 
 interface ThemeState {
   darkTheme: boolean;
@@ -9,19 +9,19 @@ interface ThemeState {
 
 const initialState = {
   darkTheme: false,
-  logo: '/logo-lightmode.svg',
+  logo: "public/logo-lightmode.svg",
 } as ThemeState;
 
 export const themeSlice = createSlice({
-  name: 'theme',
+  name: "theme",
   initialState,
   reducers: {
     toggleTheme: (state) => {
       state.darkTheme = !state.darkTheme;
       if (!state.darkTheme) {
-        state.logo = '/logo-lightmode.svg';
+        state.logo = "public/logo-lightmode.svg";
       } else {
-        state.logo = '/logo-darkmode.svg';
+        state.logo = "public/logo-darkmode.svg";
       }
     },
   },
