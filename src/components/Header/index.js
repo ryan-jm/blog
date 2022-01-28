@@ -1,8 +1,8 @@
-import { AppBar, Stack } from "@mui/material";
-import React from "react";
+import { AppBar, Stack } from '@mui/material';
+import React from 'react';
 
-import { useAppSelector } from "../../redux/hooks";
-import { StyledButton, StyledLink, StyledToolbar } from "./header.styled";
+import { useAppSelector } from '../../redux/hooks';
+import { StyledButton, StyledLink, StyledToolbar } from './header.styled';
 
 const Header = () => {
   const logoPath = useAppSelector((state) => state.theme.logo);
@@ -18,10 +18,10 @@ const Header = () => {
             <StyledLink to="/">
               <h4>Home</h4>
             </StyledLink>
-            <StyledLink to={"/article"}>
-              <h4>Post</h4>
+            <StyledLink to={'/create'}>
+              <h4>Post Article</h4>
             </StyledLink>
-            <StyledLink to={"/"}>
+            <StyledLink to={'/'}>
               <h4>My Page</h4>
             </StyledLink>
           </Stack>
