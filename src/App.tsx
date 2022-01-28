@@ -18,7 +18,7 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Landing />} />
-            <Route path="/article" element={<Article />} />
+            <Route path="/article/:id" element={<Article />} />
             {/* <Route path="/login" element={<Login />} /> */}
           </Routes>
         </div>

@@ -18,11 +18,11 @@ const Header = () => {
             <StyledLink to="/">
               <h4>Home</h4>
             </StyledLink>
-            <StyledLink to={"/article"}>
-              <h4>Post</h4>
+            <StyledLink to={"/article/:id"}>
+              <h4>Article</h4>
             </StyledLink>
             <StyledLink to={"/"}>
-              <h4>My Page</h4>
+              <h4>Create</h4>
             </StyledLink>
           </Stack>
         </div>
