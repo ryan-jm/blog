@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/blog/static/css/main.cfe6b950.css",
+    "main.js": "/blog/static/js/main.2b922d77.js",
+    "static/js/787.f587e8d5.chunk.js": "/blog/static/js/787.f587e8d5.chunk.js",
+    "static/media/manrope-all-700-normal.woff": "/blog/static/media/manrope-all-700-normal.f0d19ba682e88d970aa7.woff",
+    "static/media/manrope-all-400-normal.woff": "/blog/static/media/manrope-all-400-normal.71842421721b54059e80.woff",
+    "static/media/manrope-all-300-normal.woff": "/blog/static/media/manrope-all-300-normal.167aac000f4f2e0bebeb.woff",
+    "static/media/manrope-all-500-normal.woff": "/blog/static/media/manrope-all-500-normal.6ff39bc8c4362a87fe37.woff",
+    "static/media/manrope-latin-700-normal.woff2": "/blog/static/media/manrope-latin-700-normal.f52a8c52f1ec67cd11d1.woff2",
+    "static/media/manrope-latin-400-normal.woff2": "/blog/static/media/manrope-latin-400-normal.363602523b30a223bd42.woff2",
+    "static/media/manrope-latin-500-normal.woff2": "/blog/static/media/manrope-latin-500-normal.c4034f7b6ec0e0d20477.woff2",
+    "static/media/manrope-latin-300-normal.woff2": "/blog/static/media/manrope-latin-300-normal.14c431e09e20a9c65760.woff2",
+    "static/media/manrope-latin-ext-700-normal.woff2": "/blog/static/media/manrope-latin-ext-700-normal.c2ddb178c07afb85b717.woff2",
+    "static/media/manrope-latin-ext-300-normal.woff2": "/blog/static/media/manrope-latin-ext-300-normal.2740a0a301049cb34059.woff2",
+    "static/media/manrope-latin-ext-400-normal.woff2": "/blog/static/media/manrope-latin-ext-400-normal.45d5a104321c804eec33.woff2",
+    "static/media/manrope-latin-ext-500-normal.woff2": "/blog/static/media/manrope-latin-ext-500-normal.f6d75747494bd4a41a93.woff2",
+    "static/media/manrope-cyrillic-300-normal.woff2": "/blog/static/media/manrope-cyrillic-300-normal.5e1117ac9d8fe1c2018e.woff2",
+    "static/media/manrope-cyrillic-400-normal.woff2": "/blog/static/media/manrope-cyrillic-400-normal.84efa16e35db0efc40ea.woff2",
+    "static/media/manrope-cyrillic-500-normal.woff2": "/blog/static/media/manrope-cyrillic-500-normal.d74adf5268a48dec4fe5.woff2",
+    "static/media/manrope-cyrillic-700-normal.woff2": "/blog/static/media/manrope-cyrillic-700-normal.a1e1efc47d3f676c6564.woff2",
+    "static/media/manrope-greek-700-normal.woff2": "/blog/static/media/manrope-greek-700-normal.ee8ca3934ffd84773bda.woff2",
+    "static/media/manrope-greek-500-normal.woff2": "/blog/static/media/manrope-greek-500-normal.009ce7de2b41a49fd919.woff2",
+    "static/media/manrope-greek-300-normal.woff2": "/blog/static/media/manrope-greek-300-normal.13360f5112745bdf24a7.woff2",
+    "static/media/manrope-greek-400-normal.woff2": "/blog/static/media/manrope-greek-400-normal.7f96728a7e00ebe96754.woff2",
+    "static/media/manrope-vietnamese-300-normal.woff2": "/blog/static/media/manrope-vietnamese-300-normal.f4d277b37d74b9090cda.woff2",
+    "static/media/manrope-vietnamese-700-normal.woff2": "/blog/static/media/manrope-vietnamese-700-normal.e09e3d1aa59a46131383.woff2",
+    "static/media/manrope-vietnamese-400-normal.woff2": "/blog/static/media/manrope-vietnamese-400-normal.212098033831a48d5a38.woff2",
+    "static/media/manrope-vietnamese-500-normal.woff2": "/blog/static/media/manrope-vietnamese-500-normal.a9beac7d02609a585d55.woff2",
+    "static/media/manrope-cyrillic-ext-500-normal.woff2": "/blog/static/media/manrope-cyrillic-ext-500-normal.da3a180a498cd6234bab.woff2",
+    "static/media/manrope-cyrillic-ext-400-normal.woff2": "/blog/static/media/manrope-cyrillic-ext-400-normal.fb89febeeba15e779169.woff2",
+    "static/media/manrope-cyrillic-ext-300-normal.woff2": "/blog/static/media/manrope-cyrillic-ext-300-normal.cd1d884fb3d2d016679b.woff2",
+    "static/media/manrope-cyrillic-ext-700-normal.woff2": "/blog/static/media/manrope-cyrillic-ext-700-normal.5b7bcd82cacc220c2061.woff2",
+    "index.html": "/blog/index.html",
+    "main.cfe6b950.css.map": "/blog/static/css/main.cfe6b950.css.map",
+    "main.2b922d77.js.map": "/blog/static/js/main.2b922d77.js.map",
+    "787.f587e8d5.chunk.js.map": "/blog/static/js/787.f587e8d5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cfe6b950.css",
+    "static/js/main.2b922d77.js"
+  ]
+}
