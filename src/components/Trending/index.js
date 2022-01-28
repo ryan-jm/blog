@@ -1,9 +1,12 @@
 import React from "react";
 import MOCK_DATA from "./mock";
 import { CardMedia, CardContent, Typography, Grid } from "@mui/material";
-import { StyledCard, StyledTypography, StyledBox } from "./trending.style";
+import { StyledCard, StyledTypography, StyledBox,StyledLink  } from "./trending.style";
+import { Link } from "react-router-dom";
 
 const Trending = () => {
+  // use redux to fetch article data
+
   return (
     <Grid container width="100%">
       <Typography variant="h6">
@@ -20,7 +23,9 @@ const Trending = () => {
                 alt="img"
               />
               <CardContent>
+                <StyledLink to={`/article/${item.article_id}`}>
                 <h4>{item.title}</h4>
+                </StyledLink>
                 <StyledTypography variant="body2" color="text.secondary">
                   {item.article_body}
                 </StyledTypography>
