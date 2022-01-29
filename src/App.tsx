@@ -13,7 +13,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme.darkTheme ? darkTheme : lightTheme}>
-      <BrowserRouter>
+      <BrowserRouter basename="blog">
         <div className="App">
           <Header />
           <Routes>

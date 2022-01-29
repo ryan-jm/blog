@@ -18,7 +18,7 @@ const Header = () => {
             <StyledLink to="/">
               <h4>Home</h4>
             </StyledLink>
-            <StyledLink to={"/article/:id"}>
+            <StyledLink to={"/article/1"}>
               <h4>Article</h4>
             </StyledLink>
             <StyledLink to={"/"}>

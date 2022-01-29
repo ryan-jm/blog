@@ -49,10 +49,10 @@ const Features = () => {
         </FeatureText>
       </Grid>
       <Grid item md={4}>
-        <FeatureImage src="blog/feature-1.svg" alt="feature one" />
+        <FeatureImage src="./feature-1.svg" alt="feature one" />
       </Grid>
       <Grid item md={4}>
-        <FeatureImage src="blog/feature-2.svg" alt="feature two" width="100%" />
+        <FeatureImage src="./feature-2.svg" alt="feature two" width="100%" />
       </Grid>
       <Grid item md={8}>
         <FeatureText textAlign="justify">
