@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/blog/static/css/main.cfe6b950.css",
-    "main.js": "/blog/static/js/main.5d73e941.js",
+    "main.js": "/blog/static/js/main.a454b6b8.js",
     "static/js/787.f587e8d5.chunk.js": "/blog/static/js/787.f587e8d5.chunk.js",
     "static/media/manrope-all-700-normal.woff": "/blog/static/media/manrope-all-700-normal.f0d19ba682e88d970aa7.woff",
     "static/media/manrope-all-400-normal.woff": "/blog/static/media/manrope-all-400-normal.71842421721b54059e80.woff",
@@ -33,11 +33,11 @@
     "static/media/manrope-cyrillic-ext-700-normal.woff2": "/blog/static/media/manrope-cyrillic-ext-700-normal.5b7bcd82cacc220c2061.woff2",
     "index.html": "/blog/index.html",
     "main.cfe6b950.css.map": "/blog/static/css/main.cfe6b950.css.map",
-    "main.5d73e941.js.map": "/blog/static/js/main.5d73e941.js.map",
+    "main.a454b6b8.js.map": "/blog/static/js/main.a454b6b8.js.map",
     "787.f587e8d5.chunk.js.map": "/blog/static/js/787.f587e8d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cfe6b950.css",
-    "static/js/main.5d73e941.js"
+    "static/js/main.a454b6b8.js"
   ]
 }
