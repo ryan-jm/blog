@@ -6,8 +6,10 @@ import { Link } from "react-router-dom";
 export const StyledCard = styled(Card)`
   width: 340;
   margin: 0.5rem;
+
   h4 {
     margin: 0;
+    display:block;
   }
   :hover{
    transform:scale(1.02);

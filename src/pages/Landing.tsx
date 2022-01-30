@@ -1,4 +1,4 @@
-import { Typography, Container, Grid } from "@mui/material";
+import {Box, Grid } from "@mui/material";
 import React from "react";
 import Trending from "../components/Trending";
 import Features from "../components/Features";
@@ -6,13 +6,13 @@ import Hero from "../components/Hero";
 
 const Landing = () => {
   return (
-    <Container>
-      <Grid container rowGap={14}>
+    <Box p={10} mx={20}>
+      <Grid container rowGap={12}>
         <Hero />
         <Trending />
         <Features />
       </Grid>
-    </Container>
+    </Box>
   );
 };
 

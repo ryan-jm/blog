@@ -35,6 +35,10 @@ export const lightTheme = createTheme({
         },
       },
     },
+    MuiContainer:{
+      styleOverrides:{
+      }
+    }
   },
 });
 
