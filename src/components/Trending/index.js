@@ -2,6 +2,7 @@ import React from "react";
 import MOCK_DATA from "./mock";
 import { CardContent, Typography, Grid } from "@mui/material";
 import "react-multi-carousel/lib/styles.css";
+
 import {
   StyledCard,
   StyledTypography,
@@ -16,7 +17,6 @@ const Trending = () => {
 <div style={{display:"flex",flexDirection:"column"}}>
       <Typography ml={2} variant="h5"gutterBottom>Trending</Typography>
       <StyledBox>
-        {/* <Carousel autoPlay={true} responsive={responsive}> */}
           {MOCK_DATA.map((item) => {
             return (
               <StyledCard key={item.article_id} elevation={0}>
@@ -25,6 +25,7 @@ const Trending = () => {
                   <StyledLink to={`/article/${item.article_id}`}>
                     <h4>{item.title}</h4>
                   </StyledLink>
+
                   <StyledTypography variant="body2" color="text.secondary">
                     {item.article_body}
                   </StyledTypography>
@@ -33,7 +34,6 @@ const Trending = () => {
               </StyledCard>
             );
           })}
-        {/* </Carousel> */}
       </StyledBox>
       </div>
   );

@@ -2,57 +2,59 @@ import { Box, Grid, Typography, Button } from "@mui/material";
 
 const Hero = () => {
   return (
-    <Box width="100%" mt={20}>
-      <Grid
-        container
-        spacing={6}
-        direction="row"
-        alignItems="center"
-        justifyContent="space-between"
-        justifyItems="space-between"
-      >
-        <Box
-          width="50%"
-          sx={{
-            display: "flex",
-            justifyContent: "flex-start",
-            justifyItems: "space-between",
-            flexDirection: "column",
-          }}
+    <div className="Hero">
+      <Box width="100%" height="auto" mt={20}>
+        <Grid
+          container
+          spacing={6}
+          direction="row"
+          alignItems="center"
+          justifyContent="space-between"
+          justifyItems="space-between"
         >
-          <Typography fontSize="2rem" maxWidth="800px" fontWeight={300}>
-            Lorem ipsum dolor sit amet, <b>consectetur</b> adipiscing elit.
-            Vestibulum feugiat <b>purus</b>, sit amet dapibus odio maximus{" "}
-            <b>suscipit.</b>
-          </Typography>
-          <br />
-          <Button
-            variant="outlined"
-            disableElevation
-            color="primary"
+          <Box
+            width="50%"
             sx={{
-              width: "8rem",
-              alignSelf: "center",
+              display: "flex",
+              justifyContent: "flex-start",
+              justifyItems: "space-between",
+              flexDirection: "column",
             }}
           >
-            Get Started
-          </Button>
-        </Box>
+            <Typography fontSize="2rem" maxWidth="800px" fontWeight={300}>
+              Lorem ipsum dolor sit amet, <b>consectetur</b> adipiscing elit.
+              Vestibulum feugiat <b>purus</b>, sit amet dapibus odio maximus{" "}
+              <b>suscipit.</b>
+            </Typography>
+            <br />
+            <Button
+              variant="outlined"
+              disableElevation
+              color="primary"
+              sx={{
+                width: "8rem",
+                alignSelf: "center",
+              }}
+            >
+              Get Started
+            </Button>
+          </Box>
 
-        <Box
-          width="40%"
-          sx={{
-            position: "relative",
-            maxWidth: "100%",
-            display: "flex",
-            justifyContent: "flex-start",
-            justifyItems: "space-between",
-          }}
-        >
-          <img src="blog/hero.svg" alt="hero" width="120%" />
-        </Box>
-      </Grid>
-    </Box>
+          <Box
+            width="40%"
+            sx={{
+              position: "relative",
+              maxWidth: "100%",
+              display: "flex",
+              justifyContent: "flex-start",
+              justifyItems: "space-between",
+            }}
+          >
+            <img src="./hero.svg" alt="hero" width="100%" />
+          </Box>
+        </Grid>
+      </Box>
+    </div>
   );
 };
 

@@ -4,24 +4,26 @@ import { Card, Box, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 export const StyledCard = styled(Card)`
-  width: 340;
+  flex: 1;
+  width: 20.5rem;
+  height: 21rem;
   margin: 0.5rem;
-
+  text-align: justify;
   h4 {
     margin: 0;
     display:block;
   }
-  :hover{
-   transform:scale(1.02);
+  :hover {
+    transform: scale(1.02);
   }
-  img{
-    margin:5px;
-    width:320px;
-    height:160px;
-    object-fit:cover;
+  img {
+    margin: 5px;
+    width: 320px;
+    height: 160px;
+    object-fit: cover;
   }
-  div{
-    width:300px;
+  div {
+    width: 300px;
   }
 `;
 
@@ -35,6 +37,9 @@ export const StyledTypography = styled(Typography)`
 
 export const StyledBox = styled(Box)`
   display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  height: 100%;
 `;
 
 export const StyledLink = styled(Link)`
