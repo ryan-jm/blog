@@ -14,7 +14,7 @@ const Trending = () => {
 
   return (
 <div style={{display:"flex",flexDirection:"column"}}>
-      <Typography ml={2} variant="h4"gutterBottom>Trending</Typography>
+      <Typography ml={2} variant="h5"gutterBottom>Trending</Typography>
       <StyledBox>
         {/* <Carousel autoPlay={true} responsive={responsive}> */}
           {MOCK_DATA.map((item) => {

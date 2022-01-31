@@ -3,6 +3,7 @@ import '@fontsource/manrope/400.css';
 import '@fontsource/manrope/500.css';
 import '@fontsource/manrope/700.css';
 
+
 import { createTheme } from '@mui/material';
 
 export const lightTheme = createTheme({
@@ -22,9 +23,6 @@ export const lightTheme = createTheme({
     secondary: {
       main: '#f50057',
     },
-  },
-  typography: {
-    fontFamily: ['Manrope', 'Roboto', 'sans-serif'].join(','),
   },
   components: {
     MuiAppBar: {
@@ -63,9 +61,6 @@ export const darkTheme = createTheme({
       light: '#b388ff',
     },
   },
-  typography: {
-    fontFamily: ['Manrope', 'Roboto', 'sans-serif'].join(','),
-  },
   components: {
     MuiAppBar: {
       styleOverrides: {
@@ -79,3 +74,4 @@ export const darkTheme = createTheme({
 });
 
 // rgba(0, 0, 0, 0.87)
+

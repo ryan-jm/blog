@@ -1,5 +1,4 @@
 import { AppBar, Stack } from "@mui/material";
-import React from "react";
 
 import { useAppSelector } from "../../redux/hooks";
 import { StyledButton, StyledLink, StyledToolbar } from "./header.styled";
@@ -12,7 +11,6 @@ const Header = () => {
       <StyledToolbar className="toolbar">
         <img src={logoPath} alt="logo" />
         <h4>Search Box </h4>
-
         <div>
           <Stack direction="row" spacing={2}>
             <StyledLink to="/">
@@ -26,8 +24,7 @@ const Header = () => {
             </StyledLink>
           </Stack>
         </div>
-
-        <StyledButton variant="outline">Login</StyledButton>
+          <StyledButton variant="outline">Login</StyledButton>
       </StyledToolbar>
     </AppBar>
   );
