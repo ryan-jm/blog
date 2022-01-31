@@ -1,4 +1,3 @@
-// import { ThemeProvider } from "@mui/material/styles";
 import styled, { ThemeProvider } from "styled-components";
 import React,{useState} from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -9,15 +8,11 @@ import Article from "./pages/Article";
 import Landing from "./pages/Landing";
 import ModeSwitch from './components/shared/ModeSwitch'
 
-// import { useAppSelector } from "./redux/hooks";
-// import { darkTheme, lightTheme } from "./styles/theme";
-
 const StyledApp = styled.div`
   color: ${(props) => props.theme.fontColor};
 `;
 
 function App() {
-  // const theme = useAppSelector((state) => state.theme);
   const [theme, setTheme] = useState("light");
   const themeToggler = () => {
     console.log("theme changed");
@@ -27,7 +22,6 @@ function App() {
   };
 
   return (
-    // <ThemeProvider theme={theme.darkTheme ? darkTheme : lightTheme}>  {/* //  </ThemeProvider> */}
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <BrowserRouter>
         <DarkModeStyles />
@@ -38,6 +32,7 @@ function App() {
           </Box>
           <Routes>
             <Route path="/" element={<Landing />} />
+            <Route path="/article:id" element={<Article />} />
           </Routes>
         </StyledApp>
       </BrowserRouter>

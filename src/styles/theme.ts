@@ -24,6 +24,9 @@ export const lightTheme = createTheme({
       main: '#f50057',
     },
   },
+  typography: {
+    fontFamily: ['Manrope', 'Roboto', 'sans-serif'].join(','),
+  },
   components: {
     MuiAppBar: {
       styleOverrides: {
@@ -60,6 +63,9 @@ export const darkTheme = createTheme({
       main: '#7c4dff',
       light: '#b388ff',
     },
+  },
+  typography: {
+    fontFamily: ['Manrope', 'Roboto', 'sans-serif'].join(','),
   },
   components: {
     MuiAppBar: {

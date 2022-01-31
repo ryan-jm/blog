@@ -10,8 +10,6 @@ const Header = () => {
     <AppBar position="fixed" width="100%">
       <StyledToolbar className="toolbar">
         <img src={logoPath} alt="logo" />
-        <h4>Search Box </h4>
-        <div>
           <Stack direction="row" spacing={2}>
             <StyledLink to="/">
               <h4>Home</h4>
@@ -23,8 +21,7 @@ const Header = () => {
               <h4>Create</h4>
             </StyledLink>
           </Stack>
-        </div>
-          <StyledButton variant="outline">Login</StyledButton>
+          <StyledButton>Login</StyledButton>
       </StyledToolbar>
     </AppBar>
   );
