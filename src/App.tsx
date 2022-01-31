@@ -13,10 +13,10 @@ const StyledApp = styled.div`
 `;
 
 function App() {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState<void|string>("light");
   const themeToggler = () => {
     console.log("theme changed");
-    setTheme((prev) =>
+    setTheme((prev)=>
       prev === "light" ? setTheme("dark") : setTheme("light")
     );
   };
